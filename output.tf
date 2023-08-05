@@ -1,19 +1,19 @@
 output "arn" {
   description = "ARN OF BUCKET"
-  value       = s3bucket.arn
+  value       = aws_s3_bucket.s3bucket.arn
 }
 
 output "name" {
   description = "NAME OF BUCKET"
-  value       = s3bucket.id
+  value       = aws_s3_bucket.s3bucket.id
 }
 
-output "domain" {
-  description = "MAIN DOMAIN OF BUCKET"
-  value       = s3bucket.website_domain
-}
+# output "domain" {
+#   description = "MAIN DOMAIN OF BUCKET"
+#   value       = aws
+# }
 
 output "endpoint" {
   description = "URL OF BUCKET"
-  value       = s3bucket.website_endpoint
+  value       = aws_s3bucket.s3bucket.website_endpoint
 }
