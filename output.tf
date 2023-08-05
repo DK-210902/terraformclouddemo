@@ -1,19 +1,19 @@
 output "arn" {
   description = "ARN OF BUCKET"
-  value       = aws_s3_bucket.aws_s3_bucket_terraform_cloud.arn
+  value       = s3bucket.arn
 }
 
 output "name" {
   description = "NAME OF BUCKET"
-  value       = aws_s3_bucket.aws_s3_bucket_terraform_cloud.id
+  value       = s3bucket.id
 }
 
 output "domain" {
   description = "MAIN DOMAIN OF BUCKET"
-  value       = aws_s3_bucket.aws_s3_bucket_terraform_cloud.website_domain
+  value       = s3bucket.website_domain
 }
 
 output "endpoint" {
   description = "URL OF BUCKET"
-  value       = aws_s3_bucket.aws_s3_bucket_terraform_cloud.website_endpoint
+  value       = s3bucket.website_endpoint
 }
