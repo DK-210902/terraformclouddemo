@@ -8,10 +8,10 @@ output "name" {
   value       = aws_s3_bucket.s3bucket.id
 }
 
-output "domain" {
-  description = "MAIN DOMAIN OF BUCKET"
-  value       = aws_s3_bucket.s3bucket.domain
-}
+# output "domain" {
+#   description = "MAIN DOMAIN OF BUCKET"
+#   value       = aws_s3_bucket.s3bucket.domain
+# }
 
 output "endpoint" {
   description = "URL OF BUCKET"
