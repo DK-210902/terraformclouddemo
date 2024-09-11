@@ -3,23 +3,23 @@
 
 terraform {
   cloud {
-    organization = "morningstardemo2"
+    organization = "IamDrive"
     ## Required for Terraform Enterprise; Defaults to app.terraform.io for Terraform Cloud
     hostname = "app.terraform.io"
 
     workspaces {
-      tags = ["morningstar"]
+      tags = ["dev"]
     }
   }
 }
 
-resource "aws_s3_bucket" "morningstar_b1" {
-  bucket = "morningstar-cloudbucket31431"
+resource "aws_s3_bucket" "morningstar_b10" {
+  bucket = "morningstar-cloudbucket3143121"
 }
 
-resource "aws_s3_bucket" "morningstar_b2" {
-  bucket = "morningstar-cloudbucket5121"
+resource "aws_s3_bucket" "morningstar_b20" {
+  bucket = "morningstar-cloudbucket5121221"
 }
-resource "aws_s3_bucket" "morningstar_b3" {
-  bucket = "morningstar-cloudbucketb3"
+resource "aws_s3_bucket" "morningstar_b32" {
+  bucket = "morningstar-cloudbucketb311234"
 }
